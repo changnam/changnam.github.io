@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/main2.css}">
+<style type="text/css">
+.header {
+display: flex;
+flex-flow: column wrap;
+position: sticky;
+top: 0;
+width: 100%;
+height: 15vh;
+}
+.main {
+display: flex;
+flex-flow: row wrap;
+/*position: relative;*/
+/*top: 100px;*/
+z-index: -1;
+height: 80vh;
+}
+
+.footer {
+height: 5vh;
+width: 100%;
+position: sticky;
+bottom:0;
+}
+
+header { height: 33%;} /* containing block 은 ? flex 컨테이너 또는 조상컨테이너 (id header)의 content area */
+nav { height: 33%;} /* containing block : id header */
+#banner {height: 33%; background: olive;} /*containing block : id header */
+
+aside { width: 10%; align-self: stretch;} /*containing block :  flex 또는 조상. id main */
+main { width: 90%; height: 100%; overflow-y: scroll;}
+
+footer { height: 100%;}
+
+</style>
+</head>
+<body>
+<div id="header" class="header">
+	<header>헤더</header>
+	<nav>나비</nav>
+	<div id="banner">배너</div>
+</div>
+<div id="main" class="main">
+	<aside>사이드바</aside>
+	<main>
+		<pre> bla
+	InactiveCaption
+	Inactive window caption.
+	InactiveCaptionText
+	Color of text in an inactive caption.
+	
+	Window frame.
+	
+	InactiveCaption
+	Inactive window caption.
+	InactiveCaptionText
+	Color of text in an inactive caption.
+	
+	Window frame.
+	
+	InactiveCaption
+	Inactive window caption.
+	InactiveCaptionText
+	Color of text in an inactive caption.
+	
+	Window frame.
+	
+	InactiveCaption
+	Inactive window caption.
+	InactiveCaptionText
+	Color of text in an inactive caption.
+	
+	Window frame.
+	
+	InactiveCaption
+	Inactive window caption.
+	InactiveCaptionText
+	Color of text in an inactive caption.
+	
+	Window frame.
+	
+	InactiveCaption
+	Inactive window caption.
+	InactiveCaptionText
+	Color of text in an inactive caption.
+	
+	Window frame.
+	
+	InactiveCaption
+	Inactive window caption.
+	InactiveCaptionText
+	Color of text in an inactive caption. Color of text in an inactive caption. Color of text in an inactive caption. Color of text in an inactive caption. Color of text in an inactive caption.
+	
+	Window frame.
+		</pre>
+	</main>
+</div>
+<div class="footer" id="footer">
+	<footer>풋터</footer>
+</div>
+</body>
+</html>
