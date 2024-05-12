@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: powderblue;
+}
+
+header { background: pink;}
+nav { background: lightgreen;}
+aside { background: silver;}
+main { background: lightyellow;}
+footer { background: brown;}
+
